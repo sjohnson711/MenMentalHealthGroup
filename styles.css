@@ -37,3 +37,10 @@ li {
   font-weight: bold;
   color: gold;
 }
+
+button {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 2px;
+}
