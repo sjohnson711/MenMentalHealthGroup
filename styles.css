@@ -25,6 +25,17 @@ body {
   justify-content: space-between;
 }
 
+.mvp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  border: white;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 li {
   color: white;
   font-weight: bold;
@@ -35,21 +46,72 @@ li {
 }
 
 .logo {
-  font-size: 27px;
+  font-size: 45px;
   font-weight: bold;
-  color: Gold;
-  font-family: robo`;
+  color: White;
+}
+
+.join {
+  background-color: #8b5e4b;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 button {
-  background-color: whitesmoke;
-  color: weight;
+  background-color: transparent;
+  color: white;
   font-weight: bold;
+  border-color: white;
   border-radius: 20px;
-  padding: 5px;
-  font-size: 16px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
   text-align: center;
+  padding: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-@media CALL {
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #8b5e4b;
+}
+.info-cards h1 {
+  color: #8f4d31;
+  font-size: 24px;
+}
+
+.info-cards p {
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: black;
+    color: gold;
+  }
+  .navbar {
+    background-color: white;
+  }
+  li {
+    color: orange;
+  }
+
+  .logo {
+    color: gold;
+  }
+  button {
+    color: red;
+  }
+  .about h1 {
+    color: white; /* or any other desired color */
+  }
+  .expect h1 {
+    color: white;
+  }
 }
