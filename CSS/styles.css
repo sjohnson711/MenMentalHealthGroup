@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 20vh;
   border: white;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -46,9 +46,18 @@ li {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
   font-size: 45px;
   font-weight: bold;
   color: White;
+}
+
+.logo p {
+  font-size: 20px;
 }
 
 .join {
@@ -63,7 +72,7 @@ li {
 
 button {
   background-color: transparent;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   border-color: white;
   border-radius: 20px;
@@ -82,7 +91,7 @@ button:hover {
   color: #8b5e4b;
 }
 .info-cards h1 {
-  color: #8f4d31;
+  color: #b88665;
   font-size: 24px;
 }
 
@@ -90,13 +99,17 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+
   body {
-    background-image: none;
     background-color: black;
     color: gold;
   }
   .navbar {
-    background-color: white;
+    background-color: rgb(46, 35, 46);
   }
   li {
     color: orange;
