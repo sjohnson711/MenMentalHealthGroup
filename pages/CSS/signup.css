@@ -16,6 +16,7 @@ body {
   padding: 10px;
   height: 400px;
   width: 400px;
+  border-radius: 75px;
 }
 
 .input-container {

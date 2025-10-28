@@ -17,6 +17,16 @@ body {
   background-size: cover;
 }
 
+.nav-container {
+  background-color: orange;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav-container li {
+  font-weight: 400px;
+}
+
 .navbar {
   background: rgb(19, 7, 19);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -165,7 +175,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
     color: White;
   }
