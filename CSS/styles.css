@@ -1,6 +1,13 @@
+:root {
+  --primary-color: #ff8f14;
+  --seconday-color: #070707;
+  --grey-200: #eeeeee;
+  --color-text: #575757;
+  --color-background: #ffffff;
+}
+
 * {
   text-decoration: none;
-  color: white;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -8,12 +15,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 body {
   margin-top: 50px;
   padding: 0;
   height: 100vh;
-  background-image: url("/images/lightning.png");
-  background-color: black;
+
+  background-color: #eee9e6;
   background-size: cover;
 }
 
@@ -74,7 +87,7 @@ body {
 }
 
 li {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   display: inline-block;
@@ -90,7 +103,7 @@ li {
   margin-bottom: 50px;
   font-size: 45px;
   font-weight: bold;
-  color: White;
+  color: var(--primary-color);
 }
 
 .logo p {
@@ -107,26 +120,6 @@ li {
   font-size: 16px;
 }
 
-button {
-  background-color: transparent;
-  color: #ffffff;
-  font-weight: bold;
-  border-color: white;
-  border-radius: 20px;
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: 18px;
-  text-align: center;
-  padding: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: #8b5e4b;
-}
 .info-cards {
   display: flex;
   justify-content: center;
@@ -135,7 +128,7 @@ button:hover {
 }
 
 .info-cards h1 {
-  color: #b88665;
+  color: var(--primary-color);
   font-size: 24px;
 }
 
@@ -183,4 +176,35 @@ button:hover {
   .expect h1 {
     color: white;
   }
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: 300px;
+  margin-bottom: 30px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-1 {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.3);
+  transition: transform 0.5s;
+}
+
+.card-1:hover {
+  transform: scale(1.05);
+}
+
+.card-2 {
+  background-color: white;
+}
+
+.card-3 {
+  background-color: white;
+}
+
+.card-14 {
+  background-color: white;
 }
