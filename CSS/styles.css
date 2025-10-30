@@ -9,6 +9,7 @@
 * {
   text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,14 +20,19 @@ html {
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: black;
+  margin: 0;
+}
+
+.nav-container ul li {
+  color: white;
 }
 
 body {
-  margin-top: 50px;
+  margin: 0;
   padding: 0;
   height: 100vh;
-
-  background-color: #eee9e6;
+  background-color: #ffffff;
   background-size: cover;
 }
 
@@ -52,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20vh;
+  margin-top: 10vh;
   border: white;
   font-size: 20px;
   font-family: "montserrat", sans-serif;
@@ -77,13 +83,22 @@ body {
 }
 
 .facilitators {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  max-width: 500px;
-  text-align: center;
-  margin-bottom: 100px;
+  padding: 20px;
+  margin: 50px;
+  gap: 20px
+}
+
+.facilitators  p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.facilitators img {
+  object-fit: fill;
+  
 }
 
 li {
@@ -135,8 +150,13 @@ li {
 .footer {
   background-color: black;
   height: 150px;
-  padding: 15px;
+  padding: 0px;
   margin: 0;
+  flex: 1;
+}
+
+.footer img {
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
@@ -180,31 +200,32 @@ li {
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(2, 300px);
-  grid-template-rows: 300px;
-  margin-bottom: 30px;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
 }
 
-.card-1 {
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
   background-color: #fff;
   box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.3);
   transition: transform 0.5s;
+  height: 250px;
+  min-width: 300px;
+  border-radius: 8px;
+  padding: 30px;
+
+
 }
 
-.card-1:hover {
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
   transform: scale(1.05);
+  
 }
 
-.card-2 {
-  background-color: white;
-}
 
-.card-3 {
-  background-color: white;
-}
-
-.card-14 {
-  background-color: white;
-}
