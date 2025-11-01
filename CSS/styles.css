@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  flex: 1;
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
@@ -107,11 +111,13 @@ body {
 
 .facilitators {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: start;
+  padding: 40px;
   margin: 50px;
   gap: 20px;
+  justify-items: center;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.3);
 }
 
 .facilitators p {
@@ -122,6 +128,8 @@ body {
 .facilitators img {
   object-fit: fill;
   transition: transform 0.5s;
+  margin-bottom: 10px;
+  height: auto;
 }
 
 .facilitators img:hover {
@@ -174,23 +182,40 @@ li {
   font-size: 24px;
 }
 
+
+
 .footer {
   background-color: black;
   height: 150px;
   padding: 0px;
-  margin: 0;
+  margin: 0px;
   flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+
+}
+
+.footer h2 {
+  color: white;
 }
 
 .footer img {
   font-size: 30px;
+  justify-self: end;
+  margin: 30px 50px;
+  
+  
 }
 
 .card-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 #card {
@@ -205,7 +230,12 @@ li {
 }
 
 #card:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
+}
+
+h4 { 
+  text-align: center;
+  
 }
 
 @media (max-width: 768px) {
@@ -223,7 +253,7 @@ li {
   }
   .nav-container i {
     display: inline-block;
-    font-size: 22px;
+    font-size: 16px;
     color: black;
   }
 
