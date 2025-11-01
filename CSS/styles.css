@@ -22,6 +22,11 @@ html {
   width: 100%;
   background-color: black;
   margin: 0;
+  height: 140px;
+  align-items: center;
+  font-size: 28px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
 }
 
 .nav-container ul li {
@@ -38,22 +43,21 @@ body {
 
 .nav-container li {
   font-weight: 400px;
-  
 }
 
+.nav-container i {
+  display: none;
+}
 
-.nav-container li a{
+.nav-container li a {
   text-decoration: none;
   color: white;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .nav-container li a:hover {
   color: var(--primary-color);
-
-  
 }
-
 
 .navbar {
   background: rgb(19, 7, 19);
@@ -86,7 +90,8 @@ body {
   align-items: center;
   max-width: 500px;
   text-align: center;
-  color: var(--color-text)
+  color: var(--color-text);
+  line-height: 1.8rem;
 }
 
 .expect {
@@ -96,7 +101,8 @@ body {
   align-items: center;
   max-width: 500px;
   text-align: center;
-  color: var(--color-text)
+  color: var(--color-text);
+  line-height: 1.8rem;
 }
 
 .facilitators {
@@ -105,22 +111,21 @@ body {
   align-items: center;
   padding: 20px;
   margin: 50px;
-  gap: 20px
+  gap: 20px;
 }
 
-.facilitators  p {
+.facilitators p {
   font-weight: bold;
   font-size: 20px;
 }
 
 .facilitators img {
   object-fit: fill;
-  transition: transform .7s;
-  
+  transition: transform 0.5s;
 }
 
 .facilitators img:hover {
-  transform: scale(2.05);
+  transform: scale(1.35);
 }
 
 li {
@@ -181,7 +186,53 @@ li {
   font-size: 30px;
 }
 
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.3);
+  transition: transform 0.5s;
+  height: auto;
+  min-width: 300px;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover {
+  transform: scale(1.15);
+}
+
 @media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-container {
+    background: white;
+    width: 100%;
+  }
+  .nav-container ul li a {
+    color: black;
+  }
+  .nav-container i {
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+  }
+
   .navbar {
     display: flex;
     justify-content: center;
@@ -213,41 +264,16 @@ li {
     color: red;
   }
   .about h1 {
-    color: white; /* or any other desired color */
+    color: var(--primary-color); /* or any other desired color */
   }
   .expect h1 {
-    color: white;
+    color: var(--primary-color);
+  }
+
+  .footer {
+    background: white;
+    color: black;
+    font-weight: 800px;
+    font-size: 18px;
   }
 }
-
-.card-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.card-1,
-.card-2,
-.card-3,
-.card-4 {
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgb(0, 0, 0, 0.3);
-  transition: transform 0.5s;
-  height: 250px;
-  min-width: 300px;
-  border-radius: 8px;
-  padding: 30px;
-
-
-}
-
-.card-1:hover,
-.card-2:hover,
-.card-3:hover,
-.card-4:hover {
-  transform: scale(1.05);
-  
-}
-
-
