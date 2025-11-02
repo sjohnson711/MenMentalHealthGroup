@@ -1,4 +1,6 @@
 const testimonies = document.getElementById("testimonies");
+const testimonyInput = document.getElementById('testInput')
+
 
 const newCard = document.createElement("div");
 newCard.setAttribute("id", "card");
@@ -16,3 +18,5 @@ newCard1.innerHTML = `
     <p>Thankful for the times that Jaylon spent time with Mr. Seth and the tutoring and fatherhood he provided Jaylon with. I would recommend this team of professionals a 10 out of 10!
 `;
 testimonies.appendChild(newCard1);
+
+
