@@ -1,22 +1,38 @@
-const testimonies = document.getElementById("testimonies");
-const testimonyInput = document.getElementById('testInput')
+const handleSubmit = (e) => {
+  e.preventDefault();
 
+  const name = document.getElementById("test-name").value;
+  const area = document.getElementById("test-area").value;
+  const container = document.getElementById("testimonies");
 
-const newCard = document.createElement("div");
-newCard.setAttribute("id", "card");
-newCard.innerHTML = `
-    <h1>~Johnon</h1>
-    <p>I have been with these guys for a while and I am thankful to meet them</p>
-`;
+  const testimony = { name, area };
 
-testimonies.appendChild(newCard);
+  localStorage.setItem("testimony", JSON.stringify(testimony));
 
-const newCard1 = document.createElement("div");
-newCard1.setAttribute("id", "card");
-newCard1.innerHTML = `
-    <h1>~Keisha</h1>
-    <p>Thankful for the times that Jaylon spent time with Mr. Seth and the tutoring and fatherhood he provided Jaylon with. I would recommend this team of professionals a 10 out of 10!
-`;
-testimonies.appendChild(newCard1);
+  const saved = localStorage.getItem("testimony");
 
+  if (saved) {
+    const loading = document.createElement("div");
+    loading.innerHTML = `Loading...`;
 
+    container.appendChild(loading);
+    setTimeout(() => {
+      const localdiv = document.createElement("div");
+      localdiv.setAttribute("id", "card");
+      localdiv.innerHTML = `
+        <h1>${name}</h1>
+        <p>${area}</p>
+    `;
+      container.removeChild(loading);
+      container.appendChild(localdiv);
+    }, 10000);
+  } else {
+    JSON.parse(testimony);
+  }
+
+  document.getElementById("test-name").value = "";
+  document.getElementById("test-area").value = "";
+};
+
+const button = document.getElementById("sub-btn");
+button.addEventListener("click", handleSubmit);
