@@ -1,7 +1,7 @@
 const handleSubmit = (e) => {
   e.preventDefault();
 
-  const name = document.getElementById("test-name").value;
+  const name = document.getElementById("test-name").value.split(" ");
   const area = document.getElementById("test-area").value;
   const container = document.getElementById("testimonies");
 
@@ -20,7 +20,7 @@ const handleSubmit = (e) => {
       const localdiv = document.createElement("div");
       localdiv.setAttribute("id", "card");
       localdiv.innerHTML = `
-        <h1>${name}</h1>
+        <h1>~${name[0]}</h1>
         <p>${area}</p>
     `;
       container.removeChild(loading);

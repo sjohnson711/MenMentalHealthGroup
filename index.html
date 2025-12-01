@@ -20,8 +20,10 @@
           <li><a href="portal.html">Portal</a></li>     
           <li><a href="#testimonies">Testimonies</a></li>     
         </ul>
+       
       </nav>
     </div>
+    <div class="filter-blur"></div>
             
     </header>
     <main class="mvp">
@@ -44,13 +46,13 @@
         <h1 style="margin-top: 100px;">Meet The Facilitators</h1>
         <div class="facilitators">
          
-          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="../taurus.jpg" style="width: 200px; border-radius: 30px; height: 150px;"/>
+          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="./taurus.jpg" style="width: 200px; border-radius: 30px; height: 150px;"/>
           <p>Taurus Sanders: LPCS, LPC</p><HR hidden/>
           
-          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="../david.jpg"  style="width: 200px; border-radius: 30px; height: 150px;"/>
+          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="./david.jpg"  style="width: 200px; border-radius: 30px; height: 150px;"/>
           <p>David: LPC, Air Force Veteran</p><hr hidden/>
           
-          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="../seth.jpg" style="width: 200px; border-radius: 30px; height: 150px;"/>
+          <img style='object-fit: fill; height: 200px; border-radius: 200px;' src="./seth.jpg" style="width: 200px; border-radius: 30px; height: 150px;"/>
           <p>Seth Johnson: LPC-A, CBT Expert, Marriage and Family Focus</p>
         </div>
         <div class="card-section" id="testimonies">
@@ -78,8 +80,9 @@
     <div class="testimony-form">
       <form >
         <label for="test-name">Name</label>
-        <input id="test-name" type="text" placeholder="first name...." autocomplete="false"/>
+        <input id="test-name" type="text" placeholder="first name...." autocomplete='off'/>
 
+        <label for="text-area" > Testimony</label>
         <textarea id="test-area" type="text" placeholder="testimonies...."></textarea>
         <button id="sub-btn">Submit</button>
       </form>
