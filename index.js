@@ -1,34 +1,34 @@
+const container = document.getElementById("testimonies");
+
+function setStored() {
+  let stored = JSON.parse(localStorage.getItem("testimony")) || [];
+
+  stored.forEach((testimony) => {
+    let newCard = document.createElement("div");
+    newCard.setAttribute("id", "card");
+    newCard.innerHTML = `
+    <h1>${testimony.name}</h1>
+    <p>${testimony.area}</p>
+    `;
+   container.appendChild(newCard)
+  
+  });
+}
+
 const handleSubmit = (e) => {
   e.preventDefault();
 
   const name = document.getElementById("test-name").value.split(" ");
   const area = document.getElementById("test-area").value;
-  const container = document.getElementById("testimonies");
 
   const testimony = { name, area };
 
-  localStorage.setItem("testimony", JSON.stringify(testimony));
+  let stored = JSON.parse(localStorage.getItem("testimony")) || [];
 
-  const saved = localStorage.getItem("testimony");
+  stored.push(testimony);
+  localStorage.setItem("testimony", JSON.stringify(stored));
 
-  if (saved) {
-    const loading = document.createElement("div");
-    loading.innerHTML = `Loading...`;
-
-    container.appendChild(loading);
-    setTimeout(() => {
-      const localdiv = document.createElement("div");
-      localdiv.setAttribute("id", "card");
-      localdiv.innerHTML = `
-        <h1>~${name[0]}</h1>
-        <p>${area}</p>
-    `;
-      container.removeChild(loading);
-      container.appendChild(localdiv);
-    }, 10000);
-  } else {
-    JSON.parse(testimony);
-  }
+  setStored();
 
   document.getElementById("test-name").value = "";
   document.getElementById("test-area").value = "";
@@ -36,3 +36,6 @@ const handleSubmit = (e) => {
 
 const button = document.getElementById("sub-btn");
 button.addEventListener("click", handleSubmit);
+
+setStored();
+console.log("script loaded");
