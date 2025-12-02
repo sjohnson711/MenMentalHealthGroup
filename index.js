@@ -7,7 +7,7 @@ function setStored() {
     let newCard = document.createElement("div");
     newCard.classList.add("card");
     newCard.innerHTML = `
-    <h1>${testimony.name}</h1>
+    <h1>~${testimony.name}</h1>
     <p>${testimony.area}</p>
     `;
     container.appendChild(newCard);
