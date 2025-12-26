@@ -7,7 +7,7 @@
 
 ## 📖 About The Project
 
-The **Men's Group Companion** is a web application designed to bridge the gap for our Men's Mental Health Group. While we meet face-to-face once a month, mental health requires daily maintenance and support.
+The **Men's Group Companion** is a web application designed to bridge the gap for our Men's Mental Health Group. While we meet virtually once a month, mental health requires daily maintenance and support.
 
 This platform serves as a hub for members to share testimonials, find immediate help, and access resources. It utilizes **Local Storage** to persist user data directly in the browser, ensuring a personalized experience without the need for a complex backend server in its initial phase.
 
@@ -36,18 +36,16 @@ This project is currently under active development. The following features are i
 
 ## 🚀 Getting Started
 
-To view this project on your local machine, follow these simple steps.
+To view this project on your local machine, you can just follow these simple steps.
 
 ### Prerequisites
 
-You need a web browser (Chrome, Firefox, Safari, etc.) and a code editor (like VS Code) if you wish to view the code.
+You need a web browser (Chrome, Firefox, Safari, etc.) and a code editor (like VS Code) to view the code.
 
 ### Installation
 
 1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/your-username/mens-group-app.git](https://github.com/your-username/mens-group-app.git)
-    ```
+   
 2.  **Navigate to the project directory**
     ```bash
     cd mens-group-app
@@ -56,11 +54,7 @@ You need a web browser (Chrome, Firefox, Safari, etc.) and a code editor (like V
     * Simply double-click the `index.html` file to open it in your browser.
     * *OR* if you are using VS Code, use the "Live Server" extension to launch.
 
-## 📸 Screenshots
 
-*(Optional: Add screenshots of your website here to show off the design)*
-
-![Homepage Screenshot](path/to/screenshot.png)
 
 ## ⚠️ Disclaimer
 
@@ -68,7 +62,7 @@ This website is a supportive tool and **does not provide medical advice**. If yo
 
 ## 🤝 Contributing
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. I would greatly appreciate any contributions you make.
 
 1.  Fork the Project
 2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -78,6 +72,6 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## 📧 Contact
 
-Your Name - [YourEmail@example.com](mailto:YourEmail@example.com)
+Seth- samaritanbrotherseth@gmail.com
 
-Project Link: [https://github.com/your-username/mens-group-app](https://github.com/your-username/mens-group-app)
+Project Link: https://github.com/sjohnson711/MenMentalHealthGroup
